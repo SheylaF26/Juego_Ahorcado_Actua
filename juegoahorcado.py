@@ -141,8 +141,8 @@ def menu():
         imprimir_encabezado()
         print("1. Jugar (modo individual)")
         print("2. Ver estadísticas de la última partida")
-        print("3. Salir")
-        print("4. Jugar modo multijugador")
+        print("3. Jugar modo multijugador")  # <-- Ahora es multijugador
+        print("4. Salir")  # <-- Ahora es salir
 
         try:
             opcion = int(input("Elige una opción (1-4): "))
@@ -153,10 +153,10 @@ def menu():
                 case 2:
                     mostrar_estadisticas()
                 case 3:
+                    jugar_multijugador()  # <-- Llama al modo multijugador
+                case 4:
                     print("¡Gracias por jugar! Hasta la próxima.")
                     break
-                case 4:
-                    jugar_multijugador()
                 case _:
                     print("Opción no válida, por favor elige un número entre 1 y 4.")
         except ValueError:
