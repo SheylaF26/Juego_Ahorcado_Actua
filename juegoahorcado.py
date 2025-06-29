@@ -127,7 +127,7 @@ def mostrar_estadisticas():
     if ultima_partida["palabra_secreta"] == "":
         print("Aún no has jugado ninguna partida.")
     else:
-        print("\n📊 Estadísticas de la última partida:")
+        print("\n Estadísticas de la última partida:")
         print(f"Modo: {ultima_partida['modo']}")
         print(f"Palabra secreta: {ultima_partida['palabra_secreta']}")
         print(f"Intentos usados: {ultima_partida['intentos']}")
